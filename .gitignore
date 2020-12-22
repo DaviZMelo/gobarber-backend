@@ -1,3 +1,9 @@
 node_modules
+.idea/
 .vscode
+build/
+temp/
 yarn-error.log
+
+tmp/*
+!tmp/.gitkeep
