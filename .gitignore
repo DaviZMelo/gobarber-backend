@@ -4,6 +4,7 @@ node_modules
 build/
 temp/
 yarn-error.log
+coverage
 
 tmp/*
 !tmp/.gitkeep
