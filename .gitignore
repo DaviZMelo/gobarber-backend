@@ -5,6 +5,7 @@ build/
 temp/
 yarn-error.log
 coverage
+README.md
 
 tmp/*
 !tmp/.gitkeep
