@@ -5,7 +5,9 @@ build/
 temp/
 yarn-error.log
 coverage
+.env
 README.md
+ormconfig.json
 
 tmp/*
 !tmp/.gitkeep

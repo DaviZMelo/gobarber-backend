@@ -8,16 +8,22 @@
     "strict": true,                           
     "strictNullChecks": false,              
     "strictPropertyInitialization": false,  
-    "baseUrl": "./src",                       
+    "baseUrl": "./src",     
+    "allowJs": true,                  
     "paths": {
       "@modules/*": ["modules/*"],
       "@config/*": ["config/*"],
       "@shared/*": ["shared/*"]
-    },                           
+    },               
     "esModuleInterop": true,                  
     "experimentalDecorators": true,        
     "emitDecoratorMetadata": true,         
     "skipLibCheck": true,                     
     "forceConsistentCasingInFileNames": true  
-  }
+  },
+  "exclude": [
+    "coverage",
+    "jest.config.js",
+    "prettier.config.js"
+  ], 
 }
