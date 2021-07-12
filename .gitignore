@@ -8,6 +8,7 @@ coverage
 .env
 README.md
 ormconfig.json
+dist
 
 tmp/*
 !tmp/.gitkeep
