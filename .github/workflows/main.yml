@@ -11,15 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.2.0
-        with:
-          node-version: 12.x
-          
-      # Install dependencies npm/yarn;          
-      - name: Install dependencies
-        run: yarn
-        
+              
       # Check secrets
       - name: Check Secrets
         env:
@@ -28,7 +20,15 @@ jobs:
         run: |
           echo ${#SSH_KEY}
           echo ${#SSH_HOST}
-
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.2.0
+        with:
+          node-version: 12.x
+          
+      # Install dependencies npm/yarn;          
+      - name: Install dependencies
+        run: yarn
       
       # Execute build
       - name: Run build
