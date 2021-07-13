@@ -19,13 +19,20 @@ jobs:
       # Install dependencies npm/yarn;          
       - name: Install dependencies
         run: yarn
+        
+      # Check secrets
+      - name: Check Secrets
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+        run: |
+          echo ${#SSH_KEY}
+          echo ${#SSH_HOST}
 
       
       # Execute build
       - name: Run build
         run: yarn build
-             echo ${#TEST_GITHUB_TOKEN}
-             echo ${#TEST_SECRET}
       
       # Copy dist folder to inside Digital Ocean
       - name: Copy dist folder to Digital Ocean
