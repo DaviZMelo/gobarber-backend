@@ -33,7 +33,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           source: "."
-          target: "~/app/node-deploy"
+          target: "~/app/gobarber-backend"
       
       # Replace existent code in dist folder to the new code      
       # Execute "yarn" in Digital Ocean
